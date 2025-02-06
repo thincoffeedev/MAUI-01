@@ -22,3 +22,10 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+QLTB-Huong/QLTB-Huong/bin/Debug/net8.0-android/Microsoft.Maui.Controls.HotReload.Forms.dll
+QLTB-Huong/QLTB-Huong/bin/Debug/net8.0-android/Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+QLTB-Huong/QLTB-Huong/bin/Debug/net8.0-android/QLTB-Huong.dll
+QLTB-Huong/QLTB-Huong/bin/
+QLTB-Huong/.vs/
+QLTB-Huong/QLTB-Huong/obj/Debug/
+QLTB-Huong/QLTB-Huong/obj/Release/
