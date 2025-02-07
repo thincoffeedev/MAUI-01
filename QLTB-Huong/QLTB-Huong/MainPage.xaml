@@ -21,13 +21,6 @@
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome" 
                 Margin="30"/>
-            <Label
-                Text="Kết quả"
-                x:Name="txtKetqua"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome" 
-                Margin="30"/>       
             <!--<Button
                 x:Name="CounterBtn"
                 Text="Click me" 

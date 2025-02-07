@@ -12,33 +12,32 @@ namespace QLTB_Huong
 {
     public partial class MainPage : ContentPage
     {
-
+        
         public MainPage()
         {
             InitializeComponent();
-            
-        }
-        
-        private async void BarcodesDetected(object sender, ZXing.Net.Maui.BarcodeDetectionEventArgs e)
-        {
+            CameraBarcodeReaderView cameraBarcodeReaderView = new CameraBarcodeReaderView();
             cameraBarcodeReaderView.Options = new BarcodeReaderOptions
             {
                 Formats = BarcodeFormats.OneDimensional,
                 AutoRotate = true,
                 Multiple = true,
             };
-            
+        }
+        
+        private async void BarcodesDetected(object sender, ZXing.Net.Maui.BarcodeDetectionEventArgs e)
+        {   
             var rs = e.Results[0];
             if (rs != null)
             {
                 var checkRs = await SendDataToGoogleSheet(rs.Value);
                 if (checkRs == 1)
                 {
-                    txtKetqua.Text = "Success: " + rs.Value;
+                    //txtKetqua.Text = "Success: " + rs.Value;
                 }
                 else
                 {
-                    txtKetqua.Text = "Fail: " + checkRs;
+                    //txtKetqua.Text = "Fail: " + checkRs;
                 }
             }
         }
